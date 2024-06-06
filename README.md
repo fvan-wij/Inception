@@ -8,6 +8,20 @@ The aim of this project is to compose a collection of different Docker container
 
 ### Resources
 
+*Running a docker container*
+~docker-compose up -d~ 
+The -d flag runs the containers in the background (detached mode)
+
+*Verify if service is running*
+~docker ps~
+
+*Stopping all containers*
+~docker-compose down~
+~docker-compose stop~
+*Stopping a specific service*
+~docker-compose stop db~
+
+
 ### To dos
 
 - [] Run MariaDB container

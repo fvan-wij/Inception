@@ -1,0 +1,14 @@
+version: "3.7" #Hmm?
+
+services:
+  mariadb:
+    image: build
+    restart: always #If you're running a Deamon apparently
+    environment:
+      MYSQL_USER: test_user
+      MYSQL_ROOT_PASSWORD: test_password
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - 3306:3306
+
