@@ -15,13 +15,14 @@ The aim of this project is to compose a collection of different Docker container
 docker-compose up -d
 The -d flag runs the containers in the background (detached mode)
 
-*Verify if service is running*
+**Verify if service is running**
 docker ps
 
-*Stopping all containers*
+**Stopping all containers**
 docker-compose down
 docker-compose stop
-*Stopping a specific service*
+
+**Stopping a specific service**
 docker-compose stop db
 
 
