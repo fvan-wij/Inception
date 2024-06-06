@@ -12,17 +12,17 @@ The aim of this project is to compose a collection of different Docker container
 ### Useful commands
 
 **Running a docker container**
-~docker-compose up -d~ 
+docker-compose up -d
 The -d flag runs the containers in the background (detached mode)
 
 *Verify if service is running*
-~docker ps~
+docker ps
 
 *Stopping all containers*
-~docker-compose down~
-~docker-compose stop~
+docker-compose down
+docker-compose stop
 *Stopping a specific service*
-~docker-compose stop db~
+docker-compose stop db
 
 
 ### To dos
