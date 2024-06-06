@@ -8,7 +8,10 @@ The aim of this project is to compose a collection of different Docker container
 
 ### Resources
 
-*Running a docker container*
+
+### Useful commands
+
+**Running a docker container**
 ~docker-compose up -d~ 
 The -d flag runs the containers in the background (detached mode)
 
@@ -24,6 +27,6 @@ The -d flag runs the containers in the background (detached mode)
 
 ### To dos
 
-- [] Run MariaDB container
 - [] Run NGINX container
 - [] Run WordPress container
+- [] Run MariaDB container
