@@ -1,5 +1,5 @@
-WP_DATA = /home/flip/data/wordpress #define the path to the wordpress data
-DB_DATA = /home/flip/data/mariadb #define the path to the mariadb data
+WP_DATA = /home/fvan-wij/data/wordpress #define the path to the wordpress data
+DB_DATA = /home/fvan-wij/data/mariadb #define the path to the mariadb data
 
 # default target
 all: up
@@ -8,8 +8,8 @@ all: up
 # create the wordpress and mariadb data directories.
 # start the containers in the background and leaves them running
 up: build
-	@sudo mkdir -p $(WP_DATA)
-	@sudo mkdir -p $(DB_DATA)
+	@mkdir -p $(WP_DATA)
+	@mkdir -p $(DB_DATA)
 	docker-compose -f ./docker-compose.yml up -d
 
 # stop the containers
