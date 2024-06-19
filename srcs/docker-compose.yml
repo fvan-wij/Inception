@@ -6,7 +6,7 @@ services:
   mariadb:
     image: mariadb:fvan-wij
     container_name: mariadb
-    build: ./srcs/requirements/mariadb
+    build: ./requirements/mariadb
     volumes:
       - mariadb:/var/lib/mysql
     env_file :
@@ -18,7 +18,7 @@ services:
   nginx:
     image: nginx:fvan-wij
     container_name: nginx
-    build: ./srcs/requirements/nginx
+    build: ./requirements/nginx
     ports:
       - "443:443"
     depends_on:
@@ -32,7 +32,7 @@ services:
   wordpress:
     image: wordpress:fvan-wij
     container_name: wordpress
-    build: ./srcs/requirements/wordpress
+    build: ./requirements/wordpress
     depends_on:
       - mariadb
     volumes:
