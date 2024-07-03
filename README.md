@@ -6,6 +6,14 @@ The aim of this project is to compose a collection of different Docker container
 - MariaDB (Database)
 - WordPress (Frontend)
 
+### How Docker & Docker Compose works
+
+Docker allows you to package apps and their dependancies in so called containers, which are lightweight, consistent across different platforms and isolated from the host system.
+
+Docker Compose allows you to manage and run multiple Docker containers in a network so that they can communicate with eachother. 
+
+Compared with a VM, Docker offers some advantages such as the fact that it uses less resources from the host and only uses the bare minimum resources to run the desired applications and dependancies. The fact that containers are isolated packages, makes them very portable.
+
 ### Resources
 
 ### Images
@@ -35,6 +43,15 @@ It works like this:
 4. Docker manages resources such as CPU, memory, and storage for the container
 
 5. Docker can be used to view, stop, and manage the containers on your system. It can also be pushed to a registry, such as Docker Hub so that it can be shared with others
+
+### To find out:
+
+- Why is network: hosts or links: not allowed in your docker-compose file?
+- Why is --link not allowed in the Makefile?
+- Why is tail -f not allowed?
+- What would be wrong with infinite loops such as sleep infinity, tail -f /dev/null, tail -f /dev/random
+- The pertinence of the directory structure required for this project
+
 
 ### Dockerfiles vs Docker-compose files
 
@@ -67,7 +84,6 @@ docker-compose stop
 
 **Stopping a specific service**
 docker-compose stop db
-
 
 
 ### To dos
