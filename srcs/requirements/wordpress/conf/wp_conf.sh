@@ -12,6 +12,8 @@ mv wp-cli.phar /usr/local/bin/wp
 cd /var/www/wordpress
 # give permission to wordpress directory
 chmod -R 755 /var/www/wordpress/
+chmod 777 /var/www/wordpress/wp-config.php
+
 # change owner of wordpress directory to www-data
 chown -R www-data:www-data /var/www/wordpress
 #---------------------------------------------------ping mariadb---------------------------------------------------#
@@ -45,7 +47,7 @@ wp core config --dbhost=mariadb:3306 --dbname="$MYSQL_DB" --dbuser="$MYSQL_USER"
 # install wordpress with the given title, admin username, password and email
 wp core install --url="$DOMAIN_NAME" --title="$WP_TITLE" --admin_user="$WP_ADMIN_N" --admin_password="$WP_ADMIN_P" --admin_email="$WP_ADMIN_E" --allow-root
 #create a new user with the given username, email, password and role
-wp user create "$WP_U_NAME" "$WP_U_EMAIL" --user_pass="$WP_U_PASS" --role="$WP_U_ROLE" --allow-root
+wp user create "$WP_U_NAME" "$WP_U_EMAIL" --user_pass="$WP_U_PASS" --role="$WP_U_ROLE" --path="/var/www/wordpress" --allow-root
 
 #---------------------------------------------------php config---------------------------------------------------#
 
