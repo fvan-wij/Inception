@@ -44,15 +44,6 @@ It works like this:
 
 5. Docker can be used to view, stop, and manage the containers on your system. It can also be pushed to a registry, such as Docker Hub so that it can be shared with others
 
-### To find out:
-
-- Why is network: hosts or links: not allowed in your docker-compose file?
-- Why is --link not allowed in the Makefile?
-- Why is tail -f not allowed?
-- What would be wrong with infinite loops such as sleep infinity, tail -f /dev/null, tail -f /dev/random
-- The pertinence of the directory structure required for this project
-
-
 ### Dockerfiles vs Docker-compose files
 
 A Dockerfile is used to build a single Docker image, while Docker-compose is used to define and run multiple containers as a single app.
@@ -88,6 +79,9 @@ docker-compose stop db
 
 ### To dos
 
-- [] Run NGINX container
-- [] Run WordPress container
-- [] Run MariaDB container
+- [x] Run NGINX container
+- [x] Run WordPress container
+- [x] Run MariaDB container
+- [x] Run multicontainer WordPress site
+- [x] Have admin user + testuser
+
