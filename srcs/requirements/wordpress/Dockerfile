@@ -1,7 +1,8 @@
 FROM debian:bullseye
 
 # update and upgrade the system
-RUN apt-get update && apt-get upgrade -y
+RUN apt-get update 
+RUN apt-get upgrade -y
 
 # install the required packages
 RUN apt-get install -y curl php php7.4-fpm php-mysql mariadb-client netcat
